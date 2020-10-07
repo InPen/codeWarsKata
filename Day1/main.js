@@ -10,8 +10,14 @@ let listOfSheep = [true,  true,  true,  false,
   true,  true,  true,  true ,
   false, false, true,  true]
 
-listOfSheep.forEach(functon(sheep){
+
+listOfSheep.forEach(function(sheep) {
+//iterate though the array and find only the truthy values
   if (sheep === true) {
-    console.log(sheep)
+//create an array of only truethy values
+    presentSheep = listOfSheep.map(sheep => {
+      return(sheep === true)
+    })
+    console.log(presentSheep)
   }
-})
+});
