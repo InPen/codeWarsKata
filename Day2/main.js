@@ -5,11 +5,15 @@ let num = '' + number
 //how many times must you multiply the digits in num until you reach a single digit.
 if(num.length > 1){
   //multiply all digits of num
-  num = num.split("")
-  num = multiply(num)
-} else if(num.length === 1)
-  //returns its multiplicative persistence
+  num *(num.split(""))
+//how can I multiply by the number of digits w/o hard coding it?
+  // num = num * num.length
+} else {                  //if(num.length === 1)
+//returns its multiplicative persistence
   console.log(`${number} Multiplicative Persistence is ${num}`)
+}
+console.log(number)
+console.log(num)
 }
 persistence(36)
 
