@@ -13,3 +13,11 @@ function stringReverse(string){
 
 }
 stringReverse('Paralelepipedo')
+
+
+// The Matrix:
+
+// function reverseString(str) {
+//     return str.split("").reverse().join("")
+// }
+// reverseString("hello")
