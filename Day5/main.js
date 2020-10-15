@@ -10,6 +10,5 @@ function sortArray(array) {
     if (array[i] % 3 === 0) {
 //sort ascending
     }
-
   }
 }
