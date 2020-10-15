@@ -11,7 +11,10 @@ function findSum(a,b){
   let sum = 0
 //We will get the sum by using the reduce() method.
 //The reducer function is the function the reduce method will call to sum up the total of all the numbers from fullArr.
-  const reducer = (accumulator, currentValue) => accumulator + currentValue
+  // const reducer = (accumulator, currentValue) => accumulator + currentValue
+  function reducer (accumulator, currentValue){
+    return accumulator + currentValue
+  }
 // Even though our array input only has two numbers, it won’t always come sorted from smallest to largest. We sort the array just in case.
   arr.sort(function(a, b) {
     return a - b
