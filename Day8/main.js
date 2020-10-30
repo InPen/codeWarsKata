@@ -4,11 +4,11 @@
 // Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 const friends = ['Heba', 'Johann', 'Celia', 'Maria', 'Jess',  'Ryan', 'Leon']
 
-function friend(friends) {
-  return friends.filter(i => i.length === 4)
+function friend(friendArray) {
+  return friendArray.filter(element => element.length === 4)
 }
 
-console.log(friend())
+console.log(friend(friends))
 // friends.forEach(element => if(element.length < 4){console.log(element)})
 
 // friends.forEach = friend(string){
