@@ -3,13 +3,19 @@
 //Otherwise, you can be sure he's not...
 // Ex: Input = ["Ryan", "Kieran", "Jason", "Yous"], Output = ["Ryan", "Yous"]
 const friends = ['Heba', 'Johann', 'Celia', 'Maria', 'Jess',  'Ryan', 'Leon']
-let stringLength = 4
 
-friends.forEach = friend(string){
-  if(string.length < 4){
-    console.log(string)
-  }
+function friend(friends) {
+  return friends.filter(i => i.length === 4)
 }
+
+console.log(friend())
+// friends.forEach(element => if(element.length < 4){console.log(element)})
+
+// friends.forEach = friend(string){
+//   if(string.length < 4){
+//     console.log(string)
+//   }
+// }
 
 
 
