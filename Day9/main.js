@@ -19,4 +19,10 @@ numbers = [1,1,2,1]
 
 for (const number of numbers) {
   console.log(number)
+  if(number %2 === 0){
+     console.log('is even')
+     // console.log(numbers.findIndex(number))
+   } else {
+     console.log('is odd')
+   }
 }
