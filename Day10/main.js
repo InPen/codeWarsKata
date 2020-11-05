@@ -11,23 +11,47 @@ const suspectInfo = {james: ['Jacob', 'Bill', 'Lucas'],
 const dead = ['Lucas', 'Bill']
 
 function killer(suspectInfo, dead) {
-  let killer =''
-//access the keys inside suspectInfo and for each key begin this loop..
-  Object.keys(suspectInfo).forEach(function(key){
+  let killer = ''
+  console.log('hi',Object.keys(suspectInfo))
+//access the key values in my `suspectInfo` object
+  Object.keys(suspectInfo).forEach(function(person){
+//for every person that is a suspect...
+    console.log(person);
+//begin this loop
     let count = 0
-//compare the dead inside the dead array
-    for(const death in dead){
-//if the items in the keys of suspect info have items in the dead array
-      if(suspectInfo[key].includes(dead[death])){
-//continue to iterate
-        count+= 1
+// for every dead person in `dead` array
+    for(const muerto in dead){
+//check if they are all included in every key
+      if(Object.keys(suspectInfo).includes(dead[muerto])){
+        count+=1
       }
     }
-//if the count matched the length of the dead array then the killer is the one who's values match the dead array items
-      if(count == dead.length){
-        killer = key
-        console.log(key)
+      if(count == dead.legth){
+        killer = person
       }
   })
   return killer
 }
+killer(suspectInfo, dead)
+// function killer(suspectInfo, dead) {
+//   let killer =''
+// //access the keys inside suspectInfo and for each key begin this loop..
+//   Object.keys(suspectInfo).forEach(function(key){
+//     let count = 0
+// //compare the dead inside the dead array
+//     for(const death in dead){
+// //if the items in the keys of suspect info have items in the dead array
+//       if(suspectInfo[key].includes(dead[death])){
+// //continue to iterate
+//         count+= 1
+//       }
+//     }
+// //if the count matched the length of the dead array then the killer is the one who's values match the dead array items
+//       if(count == dead.length){
+//         killer = key
+//         console.log(key)
+//       }
+//   })
+//   return killer
+// }
+// console.log(killer())
