@@ -17,22 +17,13 @@ function killer(suspectInfo, dead) {
   Object.keys(suspectInfo).forEach(function(person){
 //for every person that is a suspect...
     console.log(person);
-//begin this loop
-    let count = 0
-// for every dead person in `dead` array
-    for(const muerto in dead){
-//check if they are all included in every key
-      if(Object.keys(suspectInfo).includes(dead[muerto])){
-        count+=1
-      }
-    }
-      if(count == dead.legth){
-        killer = person
-      }
+
   })
-  return killer
+  // return
 }
 killer(suspectInfo, dead)
+
+
 // function killer(suspectInfo, dead) {
 //   let killer =''
 // //access the keys inside suspectInfo and for each key begin this loop..
