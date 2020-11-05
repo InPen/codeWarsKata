@@ -11,10 +11,17 @@ const suspectInfo = {james: ['Jacob', 'Bill', 'Lucas'],
 const dead = ['Lucas', 'Bill']
 
 function killer(suspectInfo, dead) {
-//I should compare 'suspectInfo' arrays to 'dead' array and return the
-//array who has all the values of dead array
-  if(suspectInfo.james === dead) && || if(suspectInfo.johnny === dead) &&|| if(suspectInfo.peter === dead) {
-    console.log('you killer')
+//access keys inside 'suspectInfo' object
+  for(let suspect in suspectInfo){
+//set counter for the loop
+    let count = 0
+//access values inside 'dead' array
+    for(let muerto of dead){
+      if(!suspectInfo[key].includes(muerto))
+      continue
+      count++
+    }
+    if(count === dead.length)
+    console.log(key)
   }
 }
-killer()
