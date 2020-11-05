@@ -11,17 +11,23 @@ const suspectInfo = {james: ['Jacob', 'Bill', 'Lucas'],
 const dead = ['Lucas', 'Bill']
 
 function killer(suspectInfo, dead) {
-//access keys inside 'suspectInfo' object
-  for(let suspect in suspectInfo){
-//set counter for the loop
+  let killer =''
+//access the keys inside suspectInfo and for each key begin this loop..
+  Object.keys(suspectInfo).forEach(function(key){
     let count = 0
-//access values inside 'dead' array
-    for(let muerto of dead){
-      if(!suspectInfo[key].includes(muerto))
-      continue
-      count++
+//compare the dead inside the dead array
+    for(const death in dead){
+//if the items in the keys of suspect info have items in the dead array
+      if(suspectInfo[key].includes(dead[death])){
+//continue to iterate
+        count+= 1
+      }
     }
-    if(count === dead.length)
-    console.log(key)
-  }
+//if the count matched the length of the dead array then the killer is the one who's values match the dead array items
+      if(count == dead.length){
+        killer = key
+        console.log(key)
+      }
+  })
+  return killer
 }
