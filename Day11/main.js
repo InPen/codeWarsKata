@@ -8,19 +8,7 @@
 
 
 function bouncingBall(h,  bounce,  window) {
- // let bounce = 0.66
- // let window = 1.5
-
-//Float parameter "h" in meters must be greater than 0
-  // h > 0
-//Float parameter "bounce" must be greater than 0 and less than 1
-// bounce < 1
-//Float parameter "window" must be less than h.
-// window < h
-
-//How many times will the mother see the ball pass in front of her //window (including when it's falling and bouncing?
-  while(bounce < 1) {
-    // let window < h
-    h = h + 1
-  }
-bouncingBall(h,  bounce,  window)
+  let robounds = -1
+  if(bounce > 0 && bounce < 1) while (h > window) rebounds+=2, h *=bounce;
+  return rebounds
+}
