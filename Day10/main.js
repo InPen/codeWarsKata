@@ -17,7 +17,8 @@ function killer(suspectInfo, dead) {
   Object.keys(suspectInfo).forEach(function(person){
 //for every person that is a suspect...
     console.log(person);
-
+.find
+.includes
   })
   // return
 }
