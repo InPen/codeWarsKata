@@ -1,11 +1,13 @@
 let numbers = "1 2 3 4 5"
 
 function highAndLow(numbers){
-  // arr = (numbers.split(/[ ,]+/).join(','))
+//Create the sting into an array and replace the empty space with commas to create indexes
   let stringArr = (numbers.split(/[ ,]+/))
-  console.log(stringArr)
+  console.log(stringArr) // [ '1', '2', '3', '4', '5' ]
+//turn the strings into integers
   let numberArray = stringArr.map(el=>parseInt(el))
-  console.log(numberArray)
-  return(Math.min(...numberArray && Math.max(...numberArray))) //Math.max(...numberArray)
+  console.log(numberArray) // [ 1, 2, 3, 4, 5 ]
+  console.log(Math.min(...numberArray)) // log lowest num //1
+  console.log(Math.max(...numberArray)) //log highest num //5
 }
 highAndLow(numbers)
