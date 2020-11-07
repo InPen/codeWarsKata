@@ -14,6 +14,7 @@ function highAndLow(numbers){
   let max = (Math.max(...numberArray))
   console.log(max) //log highest num //5
 //put max and min into a new array and return the highest first separated by a single space from the lowest
-  return ((max + min ).toString(/' '+/))
+  //return ((max + min ) //.toString()) "5 1"
+
 }
 highAndLow(numbers)
