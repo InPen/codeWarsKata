@@ -2,7 +2,15 @@
 
 //Given an array of words, return an array of the number of letters that occupy their positions in the alphabet for each word. For example,
 
+let arr = "abode"
 function solve(arr){
+
+  
+  let alphabetArr = arr.map(alphabetIndex => {
+    return alphabetIndex
+  })
 //iterate through array starting at 1
-for(let i = 1; i < arr.length; i++)
+    for(i = 1; i < arr.length; i++)
+    console.log(i)
 }
+solve(arr)
