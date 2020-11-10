@@ -5,5 +5,9 @@
 //If the input array is empty consider it as: [0] (array with a zero).
 
 function oddOrEven(array) {
-   //enter code here
+  if(array.sum %2 === 0){
+    return 'even'
+  }else(
+    return 'odd'
+  )
 }
