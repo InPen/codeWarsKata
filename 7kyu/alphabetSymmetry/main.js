@@ -4,13 +4,11 @@
 
 let arr = "abode"
 function solve(arr){
-
-  
-  let alphabetArr = arr.map(alphabetIndex => {
-    return alphabetIndex
-  })
-//iterate through array starting at 1
-    for(i = 1; i < arr.length; i++)
-    console.log(i)
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+//check that every element in `arr` is lower case
+//then use .split to separate everything
+//then filter indexes from arr and alphabet and compare their indexes
+  return arr.map(element => element.toLowerCase().split('').filter((y,i) => i == alphabet.index(y)).length)
 }
+
 solve(arr)
