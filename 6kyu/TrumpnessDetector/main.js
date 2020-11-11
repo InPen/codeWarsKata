@@ -7,7 +7,17 @@
 //Round each result by two decimal digits: there is no place for small fry in Trump's America.
 
 const trumpySpeech = "MEXICAAAAAAAANS GOOOO HOOOMEEEE"
-
+let vowels = 'aeiou'
 function trumpDetector(trumpySpeech){
-  //your code here
+  let count = 0
+//iterate through string
+  for(let i = 0; i < trumpySpeech.length; i++) {
+//check if trumpySpeech has vowels and if it's more than 1 vowel
+    if(trumpySpeech.includes(vowels) && (trumpySpeech > )//has more than 1 vowel {
+      
+    }
+    // let trumpnessLevel = ([i] > 1) / totalNumOfVowels
+  }
+  return count
 }
+trumpDetector(trumpySpeech)
