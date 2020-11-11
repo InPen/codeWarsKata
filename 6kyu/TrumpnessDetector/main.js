@@ -8,16 +8,27 @@
 
 const trumpySpeech = "MEXICAAAAAAAANS GOOOO HOOOMEEEE"
 let vowels = 'aeiou'
+
+
+//count the vowels
 function trumpDetector(trumpySpeech){
   let count = 0
-//iterate through string
+//for every letter in trumpySpeech we increment our count if a vowel exist
   for(let i = 0; i < trumpySpeech.length; i++) {
-//check if trumpySpeech has vowels and if it's more than 1 vowel
-    if(trumpySpeech.includes(vowels) && (trumpySpeech > )//has more than 1 vowel {
-      
+    if (trumpySpeech[i] === 'vowels') {
+      count++
     }
-    // let trumpnessLevel = ([i] > 1) / totalNumOfVowels
   }
   return count
 }
-trumpDetector(trumpySpeech)
+
+//find the word with the most vowels
+function getMostVowels(vowels){
+  let trumpiest = ''
+  for(let i = 0; i < vowels.length, i++) {
+    if(countVowels(trumpySpeech[i]) > countVowels(vowels)) {
+      vowels = Math.round(trumpySpeech[i] * 1000)/1000
+    }
+  }
+  return trumpiest
+}
