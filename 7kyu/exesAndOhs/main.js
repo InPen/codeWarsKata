@@ -9,7 +9,7 @@
 //compare x and o variable to see if they have the same amount
 //return true || false
 
-const xAndO = 'oxxo'
+const xAndO = 'oXxo'
 
 function xO(str) {
 //make case insensitive
@@ -17,10 +17,12 @@ function xO(str) {
 //acccess string
   for(const letter of string){
 //count number of x and save to a variable
-    if string.includes('x'){
-    console.log(string)
+    let xCount = (letter === 'x') ? "true" : "false"
+    if(xCount == true){
+      xCount++
+      console.log(xCount)
     }
   }
 }
 
-XO(xAndO)
+xO(xAndO)
