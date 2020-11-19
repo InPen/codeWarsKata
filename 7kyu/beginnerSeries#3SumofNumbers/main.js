@@ -9,11 +9,12 @@
 //return the sum
 //OR return one of the nums if they're the same
 
-let nums = (23, -18)
 
-function getSum(a,b){
-
+const getSum = (a, b) => {
+  let min = Math.min(a, b),
+      max = Math.max(a, b)
+  return (max - min + 1) * (min + max) / 2
 }
 
-getSum(nums)
-console.log(nums)
+
+console.log(getSum(-666, -33))
