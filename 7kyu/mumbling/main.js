@@ -18,10 +18,10 @@ function accum(s) {
     for(let m = 0; m <= i; m++){
 //it's our first iteration, capitalize response, push it to our sArr and check the second count again
       if(m === 0){
-        response = response + s[i].toUpperCase()
+        response = s[i].toUpperCase()
 //if it's not our first iteration then lower case the latter push it to our sArr and check the second count again
       } else {
-        response = response + s[i].toLowerCase()
+        response = s[i].toLowerCase()
       }
       sArr.push(response)
     }
