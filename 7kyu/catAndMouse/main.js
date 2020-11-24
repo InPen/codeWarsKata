@@ -6,15 +6,13 @@
 //C...m returns 'Caught!' <-- as there are three characters between the two, the cat can jump.
 
 function catMouse(x){
-  let kitchen = []
-  for(let c = 0, c < x.length; c++){
-    let space = ''
-    for(let m = 0, m <= c; m++){
-      if(c < 3) && (m < 3){
-        console.log('Caught!')
-      } else {
-        console.log('Escaped!')
-      }
-    }
+  let index = x.indexOf('C', 0)
+  console.log(index)
+  if (x[(index + 4)] === '.'){
+    console.log("Escaped!")
+  }else {
+    console.log("Caught!")
   }
-}
+
+  }
+catMouse('')
