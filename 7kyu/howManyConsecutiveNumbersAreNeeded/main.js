@@ -11,12 +11,12 @@ function consecutive(arr) {
   let missing = []
   let orderedArr = arr.sort((a,b) => a - b)
   for (let i = 0; i < orderedArr.length; i++){
-    for (let j = 1; j < 1000 ; j++ ) {
-      if(orderedArr[i] + j < orderedArr[i+1]) {
-        missing.push(orderedArr[i] + j)
+    let nextValue = 1
+    while (orderedArr[i] + nextValue < orderedArr[i+1]) {
+      missing.push(orderedArr[i] + nextValue)
+      nextValue = nextValue + 1
       }
     }
-  }
-  console.log(missing) //missing.length
+  return missing.length
 }
 consecutive([1, 30, 4, 21, 10])
