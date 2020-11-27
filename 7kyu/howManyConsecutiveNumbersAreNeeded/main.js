@@ -9,9 +9,9 @@
 
 function consecutive(arr) {
   let missing = []
-  let orderedArr = arr.sort()
+  let orderedArr = arr.sort((a,b) => a - b)
   for (let i = 0; i < orderedArr.length; i++){
-    for (let j = 1; j < 100 ; j++ ){
+    for (let j = 1; j < 1000 ; j++ ) {
       if(orderedArr[i] + j < orderedArr[i+1]) {
         missing.push(orderedArr[i] + j)
       }
@@ -19,4 +19,4 @@ function consecutive(arr) {
   }
   console.log(missing) //missing.length
 }
-consecutive([1, -11, 113])
+consecutive([1, 30, 4, 21, 10])
