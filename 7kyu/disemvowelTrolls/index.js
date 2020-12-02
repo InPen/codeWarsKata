@@ -19,13 +19,15 @@ function disemvowel(str) {
   let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 //declare empty string were we'll save the new letters from our loop
   let unTrolledStr = ''
-//loop through string and target vowels using chartAt()
-  for(let i = 0; i < str.length; i++){
-      let findVowel = str.chartAt(i)
-      if(vowels.indexOf(findVowel) == -1){
-        unTrolledStr = unTrolledStr + findVowel
+//loop through string
+  for(let i = 0; i <= str.length; i++){
+//find all the vowels using chartAt()
+      let vowlChar = str.charAt(i)
+//
+      if(vowels.indexOf(vowlChar) == -1){
+        unTrolledStr += vowlChar
       }
     }
-    console.log(unTrolledStr)
+    return unTrolledStr
 }
-disemvowel("This website is for losers LOL!")
+console.log(disemvowel("This website is for losers LOL!"))
