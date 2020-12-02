@@ -15,9 +15,17 @@
 //turn array into string
 
 function disemvowel(str) {
-  str.toLowerCase().split()
-  for(const letter of str){
-    console.log(letter);
-  }
+//declare vowels
+  let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+//declare empty string were we'll save the new letters from our loop
+  let unTrolledStr = ''
+//loop through string and target vowels using chartAt()
+  for(let i = 0; i < str.length; i++){
+      let findVowel = str.chartAt(i)
+      if(vowels.indexOf(findVowel) == -1){
+        unTrolledStr = unTrolledStr + findVowel
+      }
+    }
+    console.log(unTrolledStr)
 }
 disemvowel("This website is for losers LOL!")
