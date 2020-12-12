@@ -6,11 +6,18 @@
 // R : the quarter of the year the month is on
 // E : so the month october would be represented as 10 and I would return 4
 //     since it's on the 4th quarter of the year
-// P : declare the cuarters of the month
-//     create a conditional that checks what quarter the num we receive is on 
+// P : declare the cuarters of the month // THIS MIGHT GET COMPLICATED SINCE WE WANT TO RETURN
+//     A NUMBER
+//     create a conditional that checks what quarter the num we receive is on
+
+//123 = 1st
+//456 = 2nd
+//789 = 3rd
+//101112 = 4th
 
 const quarterOf = (month) => {
-  // Your code here
+  if(month <= 3)
+  else if (month )
 
 }
 quarterOf(8)
