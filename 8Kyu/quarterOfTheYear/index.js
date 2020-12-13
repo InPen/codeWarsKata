@@ -18,6 +18,5 @@
 const quarterOf = (month) => {
   if(month <= 3)
   else if (month )
-
 }
 quarterOf(8)
