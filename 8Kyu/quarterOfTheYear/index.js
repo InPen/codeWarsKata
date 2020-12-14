@@ -16,7 +16,9 @@
 //101112 = 4th
 
 const quarterOf = (month) => {
-  if(month <= 3)
+  if(month <= 3){
+    return 1
+  }
   else if (month )
 }
 quarterOf(8)
