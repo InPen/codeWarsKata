@@ -4,5 +4,6 @@
 
 
 function hero(bullets, dragons){
-//Get Coding!
+  return bullets >= dragons *2
 }
+hero(1500, 751)
