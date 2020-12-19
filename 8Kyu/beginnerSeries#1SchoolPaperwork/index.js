@@ -8,3 +8,12 @@
 //P: I need the same amount of pages as there are class classmates
   //so if I have 12 class mates, I need 12 pages
   //then, based on the example, I multiply 12 * 12 and my answear is the result
+
+const paperwork = (classmates, pages) => {
+  if(classmates < 0 || pages < 0){
+    return 0
+  }else {
+    let blankPagesNeeded = pages * classmates
+    return blankPagesNeeded
+  }
+}
