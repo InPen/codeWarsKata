@@ -12,4 +12,4 @@ const calc = string =>{
   })
   console.log(sum)
 }
-calc('ABC')
+calc('HAN')
