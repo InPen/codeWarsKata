@@ -12,6 +12,6 @@
     //reduce total and return number
 
 const totalVowels = string => {
-  return str.split('').filter(c => "aeiouAEIOU".includes(c)).length
+  console.log(string.split('').filter(vowel => "aeiouAEIOU".includes(vowel)).length)
 }
-console.log(totalVowels("PaRaLeLEpiPEDO"))
+totalVowels("PaRaLeLEpiPEDO")
