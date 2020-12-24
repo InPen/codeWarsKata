@@ -18,3 +18,14 @@ function highAndLow(numbers){
 
 }
 highAndLow(numbers)
+
+
+
+const highAndLow = numbers =>{
+  numbers
+    .split('')
+    .sort((a,b) => b-a)
+    let max = Math.max(numbers)
+    let min = Math.min(numbers)
+
+}
