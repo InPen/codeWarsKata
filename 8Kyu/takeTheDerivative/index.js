@@ -5,5 +5,5 @@
 const derive = (num1,num2) => {
   let coefficient = num1 * num2
   let exponent = num2 - 1
-  return `${coefficient}` `${exponent}`
+  return `${coefficient}x^${exponent}`
 }
