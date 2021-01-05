@@ -3,7 +3,22 @@
 //Return True if yes, False otherwise :)
 
 
-function hero(bullets, dragons){
-  return bullets >= dragons *2
+// function hero(bullets, dragons){
+//   return bullets >= dragons *2
+// }
+//hero(1500, 751)
+
+
+
+const willHeSurvive = (dragons, bullets) => {
+  if(bullets % 2 === 0 && bullets > dragons){
+    console.log("He's gonna survive");
+  } else {
+    console.log("R.I.P");
+  }
 }
-hero(1500, 751)
+willHeSurvive(3, 1)
+// P :bullets and dragons
+// R : a string that says he survived or not 
+// E : it takes 2 bullets to kill 1 dragon 
+// P : if bullets % 2 === 0 && bullets > dragons / He'll survive
