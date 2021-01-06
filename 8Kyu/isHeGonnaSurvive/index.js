@@ -18,6 +18,7 @@ const willHeSurvive = (dragons, bullets) => {
   }
 }
 willHeSurvive(3, 1)
+
 // P :bullets and dragons
 // R : a string that says he survived or not 
 // E : it takes 2 bullets to kill 1 dragon 
