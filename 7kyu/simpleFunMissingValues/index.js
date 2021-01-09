@@ -10,3 +10,7 @@ For arr=[1, 1, 1, 2, 2, 3], the result should be 18
 el 1 = x
 el 2 = y
 
+P : arr of + nums 
+R : return the product of x*x*y
+E : [8,12,8,12,8,4] / 4 * 4 * 12
+P : 
