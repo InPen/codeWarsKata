@@ -14,4 +14,5 @@ P : arr of + nums
 R : return the product of x*x*y
 E : [8,12,8,12,8,4] / 4 * 4 * 12
 P : sort arr 
-compare indexes 
+compare
+ indexes 
