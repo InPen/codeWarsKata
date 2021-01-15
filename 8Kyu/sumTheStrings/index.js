@@ -18,3 +18,7 @@ const sumStr = (a,b) => {
     return String(sum)
 }
 sumStr('10', '8')
+
+const SumStr = (a,b) => {
+    return String(Number(a) + Number(b))
+}
