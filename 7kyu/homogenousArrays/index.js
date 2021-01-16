@@ -16,5 +16,9 @@
 //     remove arrs that don't have the same type
 
 const filterHomogenous = arrays => {
-    arrays.filter(index => typeOf(index === Number))
+    let filtered = []
+
+    for(let array in arrays){
+        if(typeof(arrays[i] === Number))
+    }
 }
