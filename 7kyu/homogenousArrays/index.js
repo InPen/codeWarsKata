@@ -19,6 +19,11 @@ const filterHomogenous = arrays => {
     let filtered = []
 
     for(let array in arrays){
-        if(typeof(arrays[i] === Number))
+        if(typeof(arrays[i] === Number)){
+            filtered.push(arrays[i])
+        } else if(typeof(arrays[i] === String)){
+            filtered.push(arrays[i])
+        }
     }
+    return filtered
 }
