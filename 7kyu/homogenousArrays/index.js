@@ -14,7 +14,7 @@
 // P : arrays[1] //access indexes
 //     sort arrs by typeof()
 //     remove arrs that don't have the same type
-
+//    forEvery()?
 const filterHomogenous = arrays => {
     let filtered = []
     for(let array in arrays){
