@@ -26,3 +26,4 @@ const filterHomogenous = arrays => {
     }
     return filtered
 }
+filterHomogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
