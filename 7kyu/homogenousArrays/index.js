@@ -15,15 +15,22 @@
 //     sort arrs by typeof()
 //     remove arrs that don't have the same type
 //    forEvery()?
+// const filterHomogenous = arrays => {
+//     let filtered = []
+//     for(let i = 0; i < arrays.length; i++){
+//             for(let array in arrays){
+//         if(typeof(arrays.array[i] === Number)){
+//             filtered.push(arrays.array[i])
+//         } else if(typeof(arrays.array[i] === String)){
+//             filtered.push(arrays.array[i])
+//         }
+//     }
+//     }
+//     return filtered
+// }
+
+
 const filterHomogenous = arrays => {
-    let filtered = []
-    for(let array in arrays){
-        if(typeof(arrays[i] === Number)){
-            filtered.push(arrays[i])
-        } else if(typeof(arrays[i] === String)){
-            filtered.push(arrays[i])
-        }
-    }
-    return filtered
+    return arrays.filter(arr => arr.length > 0 && arr.every(el => (typeof el) == (typeof arr[0])))
 }
 filterHomogenous([[1, 5, 4], ['a', 3, 5], ['b'], [], ['1', 2, 3]])
