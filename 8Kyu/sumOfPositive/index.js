@@ -1,13 +1,13 @@
-You get an array of numbers, return the sum of all of the positives ones.
+// You get an array of numbers, return the sum of all of the positives ones.
 
-P : arr of nums
-R : the sum of all + ints || 0
-E : [0,4,-3,10] => 14 
-P : filter arr
-    sum + ints
-    create a conditional for null or - ints
+// P : arr of nums
+// R : the sum of all + ints || 0
+// E : [0,4,-3,10] => 14 
+// P : filter arr
+//     sum + ints
+//     create a conditional for null or - ints
 
 const positiveSum = arr => {
-    
+     console.log(arr.filter(nums => nums > 0))
 } 
 positiveSum([0,4,-3,10])
