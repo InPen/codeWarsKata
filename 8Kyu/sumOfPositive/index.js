@@ -10,4 +10,5 @@
 const positiveSum = arr => {
     arr.filter(nums => nums > 0).reduce((accum, current) => accum + current, 0)
 } 
+
 positiveSum([0,4,-3,10])
