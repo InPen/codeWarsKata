@@ -8,7 +8,6 @@
 //     create a conditional for null or - ints
 
 const positiveSum = arr => {
-
     return arr.filter(nums => nums > 0).reduce((accum, current) => accum + current, 0)
 } 
 
