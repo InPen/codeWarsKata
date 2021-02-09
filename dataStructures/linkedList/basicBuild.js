@@ -46,7 +46,6 @@ class LinkedList {
     if (index > 0 && index > this.size) {
       return;
     }
-
     // If first index
     if (index === 0) {
       this.insertFirst(data);
