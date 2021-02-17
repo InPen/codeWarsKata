@@ -119,6 +119,7 @@ class LinkedList {
     this.head = null;
     this.size = 0;
   }
+  
 
   // Print list data
   printListData() {
