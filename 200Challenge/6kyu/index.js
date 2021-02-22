@@ -16,5 +16,4 @@ function stringTransformer(str) {
     }
   }
   return arr.join('')
- 
 }
