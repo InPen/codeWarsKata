@@ -8,3 +8,8 @@
 // P : turn our strings into nums 
 //     add all nums 
 //     return the total 
+
+const sumMix = arr => {
+    Number(arr.reduce((accum, current) => Number(accum) + Number(current), 0))
+}
+sumMix([1,'1',1,'1'])
