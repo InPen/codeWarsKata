@@ -7,13 +7,12 @@
 //     turn my string into arr
 
 const palindromeChecker = string =>{
-    string.split(' ')
-    for(char of string){
-        if(char[0] === char[string.length -1]){
-            console.log(true);
-        }else {
-            console.log(false);
-        }
+    string.toLowerCase()
+    let arrStr = string.toLowerCase().split('').reverse().join('')
+    if(string === arrStr){
+        console.log(true);
+    }else {
+        console.log(false);
     }
 }
 palindromeChecker('Anna')
