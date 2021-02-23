@@ -14,3 +14,13 @@ const reverseString = string => {
     console.log(string.split('').reverse().join(''))
 }
 reverseString('I want a dvd')
+
+const reverseString = string =>{
+    string.split('')
+    let reversed = []
+    for(let i = string.length - 1; i >=0; i-- ){
+        reversed.push(string[i])
+    }
+    console.log(reversed.join(''))
+}
+reverseString('Snooky')
