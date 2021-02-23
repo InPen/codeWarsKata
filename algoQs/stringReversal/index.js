@@ -9,3 +9,8 @@
 //     lastIndexOf() ?
 //     push to new Array
 //     join that Array to turn back as string 
+
+const reverseString = string => {
+    console.log(string.split('').reverse().join(''))
+}
+reverseString('I want a dvd')
