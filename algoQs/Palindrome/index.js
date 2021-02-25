@@ -6,13 +6,24 @@
 // P : i can check first and last indexes and if they match is a palyndrome 
 //     turn my string into arr
 
-const palindromeChecker = string =>{
-    string.toLowerCase()
-    let arrStr = string.toLowerCase().split('').reverse().join('')
-    if(string === arrStr){
-        console.log(true);
-    }else {
-        console.log(false);
+// const palindromeChecker = string =>{
+//     string.toLowerCase()
+//     console.log(string == string.split('').reverse().join(''))
+// }
+// palindromeChecker('Racecar')
+
+
+var summation = function (num) {
+    console.log(num);
+    if(num){
+        console.log('next summation ' + `${num-1}`)
+        const numTrue = num + summation(num - 1)
+        console.log(numTrue); 
+        return numTrue
+    } else {
+        console.log('stop condition');
+        console.log(num);
+        return num
     }
 }
-palindromeChecker('Anna')
+summation(3)
