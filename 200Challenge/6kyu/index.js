@@ -17,3 +17,4 @@ function stringTransformer(str) {
   }
   return arr.join('')
 }
+stringTransformer('banana')
