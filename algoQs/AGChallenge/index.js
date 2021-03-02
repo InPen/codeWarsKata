@@ -24,6 +24,8 @@ Example:
   }
 timePoint(arr, 4)
 
+
+
 1.initialize new arr
 2.add to arr
 3. pull from providedinput arr && string 
