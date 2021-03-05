@@ -2,8 +2,23 @@
 //turn number into a string so we can check how many digits it has
 //how many times must you multiply the digits in num until you reach a single digit.
 //multiply all digits of num
-//how can I multiply by the number of digits w/o hard coding it?
 //returns its multiplicative persistence
+
+
+P :positive number
+R :
+E :
+P :
+
+
+
+
+
+
+
+
+
+
 
 
 
