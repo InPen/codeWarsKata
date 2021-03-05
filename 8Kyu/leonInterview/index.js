@@ -9,7 +9,18 @@
 //     use reduce() to return the sum
 
 
-const sumOfNums = arr => {
-  return arr.reduce((accum, currentValue) => accum + Number(currentValue), 0)
+const totalArr = arr => {
+  console.log(arr.reduce((accum, currentVal) => accum + Number(currentVal), 0)); 
 }
-console.log(sumOfNums([18, '7', 36, '1'])) //10
+totalArr(['1','1,',1,1])
+
+
+
+
+
+
+
+// const sumOfNums = arr => {
+//   return arr.reduce((accum, currentValue) => accum + Number(currentValue), 0)
+// }
+// console.log(sumOfNums([18, '7', 36, '1'])) //10
