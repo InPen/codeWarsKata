@@ -7,26 +7,27 @@
  */
 const maxProfit = function(prices) {
     
+let unsorted = [...prices]
     let sortedPrices = prices.sort((a,b) => a-b)
     let cheapest = sortedPrices[0]
-    let cheapestDay = prices.indexOf(cheapest)
-    // console.log(cheapestDay)
+    let cheapestDay = unsorted.indexOf(cheapest)
     let expensive = sortedPrices[sortedPrices.length - 1]
-    let expensiveDay = prices.indexOf(expensive)
-
-    if(cheapestDay < expensiveDay){
-        let maxProfit = expensive - cheapest
-    }
-
-
-    console.log(maxProfit)
-
-    // for(let i = 0; i < prices.length - 1; i++){
-    //     if(prices[i] < prices[i+1]){
-    //         bestBuy = prices[i]
-    //         console.log(bestBuy)
-    //     }
-    // }
+    let expensiveDay = unsorted.indexOf(expensive)
+    let tempExpensive = []
+    
+    for(let i = unsorted.length - 1; i > cheapestDay; i--){
+      
+        if(unsorted[i] > cheapest){
+          tempExpensive.push(unsorted[i])
+        }
+      }
+  
+  tempExpensive.sort((a,b) => b-a)
+  expensive = tempExpensive[0]
+  if (!expensive){
+    return 0
+  }
+  return expensive - cheapest
     
 }
 maxProfit([0,1,4,8,0]) //[ 0, 0, 1, 4, 8 ]
