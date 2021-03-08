@@ -9,6 +9,6 @@
 
 
 const reverseString = (s) => {
-    console.log(s.map(el => el.split('').reverse()))
+    console.log(s.reverse())
 }
-reverseString(['Snooky'])
+reverseString(["h","e","l","l","o"])
