@@ -10,3 +10,10 @@
 
 // Internally you can think of this:
 
+
+
+const removeDuplicates = nums =>{
+    let uniqueNums = [...new Set(nums)]
+    console.log(uniqueNums);
+}
+nums([0,0,1,1,1,2,2,3,3,4])
