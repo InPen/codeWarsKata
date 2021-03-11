@@ -9,7 +9,7 @@
 // Note that the input array is passed in by reference, which means a modification to the input array will be known to the caller as well.
 
 // Internally you can think of this:
-
+https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 
 const removeDuplicates = nums =>{
