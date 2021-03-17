@@ -6,6 +6,7 @@
 
 // If the total of both even and odd numbers are identical return: "Even and Odd are the same"
 
+
 function evenOrOdd(str) {
   let nums = str.split('')
   let even = nums.filter(num => num % 2 === 0).reduce((accum,current) => accum + current, 0)
