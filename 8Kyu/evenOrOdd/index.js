@@ -11,7 +11,7 @@ function evenOrOdd(str) {
   let nums = str.split('')
   let even = nums.filter(num => num % 2 === 0).reduce((accum,current) => accum + current, 0)
   let odd = nums.filter(num => num % 3 === 0).reduce((accum, current) => accum + current, 0)
-  
+
   if(even > odd){
     return 'Even is greater than Odd'
   }else if(odd > even){
