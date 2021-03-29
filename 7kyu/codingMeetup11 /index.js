@@ -16,5 +16,5 @@
 
 
 function getAverageAge(list) {
-  return Math.round(list.reduce((sum, obj) => sum + obj.age, 0) / list.length);
+  return Math.round(list.map((dev, i) => dev.age).reduce((accum, currentVal) => accum + currentVal, 0)/list.length)
 }
