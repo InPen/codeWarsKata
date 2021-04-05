@@ -12,5 +12,5 @@ const preFizz = n => {
         num += 1
     }
 
-    console.log(nArr);
+    return nArr
 }
