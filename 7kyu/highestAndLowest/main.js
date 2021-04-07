@@ -12,3 +12,17 @@ function highAndLow(numbers){
   return Math.max(numArr) + " " + Math.min(numArr)
 
 }
+
+
+//
+
+function highAndLow(numbers) {
+  let numArr = numbers.split(" ").map((num) => Number(num));
+
+  let max = Math.max(...numArr);
+  console.log(max);
+  let min = Math.min(...numArr);
+  console.log(min);
+
+  return `${max} ${min}`;
+}
