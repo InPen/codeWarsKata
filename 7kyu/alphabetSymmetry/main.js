@@ -2,13 +2,15 @@
 
 //Given an array of words, return an array of the number of letters that occupy their positions in the alphabet for each word. For example,
 
-let arr = "abode"
-function solve(arr){
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz'
-//check that every element in `arr` is lower case
-//then use .split to separate everything
-//then filter indexes from arr and alphabet and compare their indexes
-  return arr.map(element => element.toLowerCase().split('').filter((y,i) => i == alphabet.index(y)).length)
-}
+// let arr = "abode"
+// function solve(arr){
+//   let alphabet = 'abcdefghijklmnopqrstuvwxyz'
+// //check that every element in `arr` is lower case
+// //then use .split to separate everything
+// //then filter indexes from arr and alphabet and compare their indexes
+//   return arr.map(element => element.toLowerCase().split('').filter((y,i) => i == alphabet.index(y)).length)
+// }
 
-solve(arr)
+// solve(arr)
+
+
