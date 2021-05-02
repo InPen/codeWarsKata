@@ -3,6 +3,7 @@
 // For example:
 
 // summation(2) -> 3
+
 // 1 + 2
 
 // summation(8) -> 36
