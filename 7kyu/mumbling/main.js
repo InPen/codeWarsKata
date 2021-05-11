@@ -3,6 +3,7 @@
 //accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
 //accum("cwAt") -> "C-Ww-Aaa-Tttt"
 
+
 //sudo
 //capitalize every letter
 //duplicate in lower case each letter
