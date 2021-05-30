@@ -2,9 +2,14 @@
 // There will always be only one integer that appears an odd number of times.
 // 
 
-push each num into a variable to check if it appears an odd amount of times?
-
 function findOdd(A) {
   //happy coding!
-  return 0;
+
+  for (let i = 0; i <= A.length - 1; i += 1) {
+    let elmLength = A.filter((elm) => elm === A[i]).length;
+
+    if (elmLength % 2 !== 0) {
+      return A[i];
+    }
+  }
 }
