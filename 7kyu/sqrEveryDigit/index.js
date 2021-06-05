@@ -7,4 +7,3 @@ function squareDigits(num) {
   }
   return Number(sqrArr.join(""));
 }
-
