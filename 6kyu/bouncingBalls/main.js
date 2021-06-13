@@ -7,6 +7,7 @@
 //How many times will the mother see the ball pass in front of her //window (including when it's falling and bouncing?
 
 
+
 function bouncingBall(h,  bounce,  window) {
   let window = 1.5
   let bounce = 0.66
