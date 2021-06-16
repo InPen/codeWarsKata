@@ -2,7 +2,7 @@ function squareDigits(num) {
   let nums = num.toString().split("");
   let sqrArr = [];
 
-  fr (let i = 0; i < nums.length; i++) {
+  for (let i = 0; i < nums.length; i++) {
     sqrArr.push(nums[i] * nums[i]);
   }
   return Number(sqrArr.join(""));
